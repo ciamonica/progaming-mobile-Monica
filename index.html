@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Legenda Roro Jonggrang</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="mobile-frame">
+    <!-- Header Aplikasi -->
+    <header class="app-header">
+      <h1>Legenda Roro Jonggrang</h1>
+      <p id="page-subtitle">Halaman 1 dari 10</p>
+    </header>
+
+    <!-- Hidden YouTube Player Container -->
+    <div id="youtube-player" style="display: none;"></div>
+
+    <!-- Konten Utama -->
+    <main class="content-container">
+      <div class="image-card">
+        <img id="story-image" src="img/1.jpg" alt="Ilustrasi Roro Jonggrang">
+      </div>
+
+      <div class="text-card">
+        <h2 id="story-title">📖 1. Kerajaan Pengging & Prambanan</h2>
+        <p id="story-text">
+          Dahulu kala, terdapat dua kerajaan tetangga: Kerajaan Pengging yang subur dan Kerajaan Prambanan. Prabu Damar Moyo dari Pengging memiliki putra sakti bernama Bandung Bandawasa yang berhasil mengalahkan Prabu Baka, raja Prambanan.
+        </p>
+      </div>
+    </main>
+
+    <!-- Kontrol Suara & Navigasi -->
+    <footer class="app-footer">
+      <div class="button-group">
+        <button id="btn-prev" class="btn btn-secondary" onclick="changeSlide(-1)" disabled>&lt; Sebelum</button>
+        <button id="btn-bgm" class="btn btn-music" onclick="toggleBGM()">🎵 Musik</button>
+        <button id="btn-voice" class="btn btn-orange" onclick="toggleVoice()">🔊 Suara</button>
+        <button id="btn-next" class="btn btn-primary" onclick="changeSlide(1)">Lanjut &gt;</button>
+      </div>
+
+      <!-- Indikator Dots -->
+      <div class="dots-container" id="dots-container"></div>
+    </footer>
+  </div>
+
+  <!-- YouTube Iframe API Script -->
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

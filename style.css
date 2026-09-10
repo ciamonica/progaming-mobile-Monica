@@ -1,0 +1,170 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+  background-color: #121824;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Bingkai Mobile Device */
+.mobile-frame {
+  width: 100%;
+  max-width: 412px;
+  height: 840px;
+  background-color: #f4f6fb;
+  border-radius: 36px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+  border: 8px solid #2a3447;
+}
+
+/* Header */
+.app-header {
+  background: linear-gradient(135deg, #1d52d8, #2563eb);
+  color: white;
+  text-align: center;
+  padding: 24px 16px 16px 16px;
+}
+
+.app-header h1 {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.app-header p {
+  font-size: 0.8rem;
+  opacity: 0.85;
+  margin-top: 4px;
+}
+
+/* Container Konten */
+.content-container {
+  flex: 1;
+  padding: 16px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Card Gambar */
+.image-card {
+  width: 100%;
+  height: 220px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.image-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Card Teks Cerita */
+.text-card {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  flex: 1;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+.text-card h2 {
+  font-size: 1.05rem;
+  color: #1e293b;
+  margin-bottom: 12px;
+}
+
+.text-card p {
+  font-size: 0.9rem;
+  color: #475569;
+  line-height: 1.6;
+}
+
+/* Footer & Tombol Navigasi */
+.app-footer {
+  padding: 16px;
+  background: white;
+  border-top: 1px solid #e2e8f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.button-group {
+  display: flex;
+  gap: 8px;
+  width: 100%;
+}
+
+.btn {
+  flex: 1;
+  padding: 12px 6px;
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: opacity 0.2s, background-color 0.2s;
+}
+
+.btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.btn-secondary {
+  background-color: #cbd5e1;
+  color: #475569;
+}
+
+.btn-music {
+  background-color: #0d9488;
+  color: white;
+}
+
+.btn-music.active {
+  background-color: #0f766e;
+}
+
+.btn-orange {
+  background-color: #f97316;
+  color: white;
+}
+
+.btn-primary {
+  background-color: #2563eb;
+  color: white;
+}
+
+/* Indikator Halaman (Dots) */
+.dots-container {
+  display: flex;
+  gap: 6px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background-color: #cbd5e1;
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+
+.dot.active {
+  width: 20px;
+  background-color: #2563eb;
+  border-radius: 4px;
+}
